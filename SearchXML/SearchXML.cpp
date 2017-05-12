@@ -9,12 +9,14 @@ using namespace std;
 
 int main()
 {
-	std::string stXML = "123456789Person123456789Person"; // "<Table1><Person>Hello</Person><Person>JoeSpaggetti</Person></Table1>";
+	std::string stXML = "123456789Person123456789Person123456789Person123456789Person"; // "<Table1><Person>Hello</Person><Person>JoeSpaggetti</Person></Table1>";
 
 
-	std::cout << stXML.length() << std::endl;
+	int tempLenght = 0;
 
-	for (int i = 0; i < stXML.length(); i++)
+	tempLenght = stXML.length()/4;
+
+	for (int i = 0; i < stXML.length(); i += tempLenght)
 	{
 		std::cout << "i:" << i << " " << stXML.find("Person", i) << std::endl;
 
