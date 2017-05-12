@@ -2,7 +2,7 @@
 #include <string>
 class parseData
 {
-	std::string stXML = "<Table1><Person>Ed</Person><Person>Joe</Person></Table1>";
+	std::string stXML = "a";
 	int tempLenght = 0;
 	unsigned int foundLocationFront[20]{ 0 };
 	unsigned int foundLocationBack[20]{ 0 };
@@ -13,6 +13,7 @@ public:
 	parseData();
 	~parseData();
 
+	std::string addXML(std::string stXML_);
 	void addToArray();
 	void difference();
 	void display();

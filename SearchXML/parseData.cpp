@@ -11,11 +11,13 @@ parseData::parseData()
 parseData::~parseData()
 {
 }
+std::string  parseData::addXML(std::string stXML_)
+{
+	stXML = stXML_;
+	return stXML;
 
-//std::string findInParseData(stXML, scrch)
-//{
-//
-//}
+}
+
 
 void parseData::addToArray()
 {
