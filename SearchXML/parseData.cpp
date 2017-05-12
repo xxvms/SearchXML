@@ -11,3 +11,8 @@ parseData::parseData()
 parseData::~parseData()
 {
 }
+
+//std::string findInParseData(stXML, scrch)
+//{
+//
+//}
